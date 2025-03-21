@@ -7,7 +7,7 @@ const InputField = ({ label, type, placeholder, value, onChange }) => (
         value={value}
         onChange={onChange}
         required
-        className="w-full px-3 py-2 border rounded-lg"
+        className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm"
       />
     </div>
   );
