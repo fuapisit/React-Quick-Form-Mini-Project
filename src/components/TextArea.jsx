@@ -5,7 +5,7 @@ const TextArea = ({ value, onChange }) => (
         value={value}
         onChange={onChange}
         placeholder="พิมพ์ความคิดเห็นของคุณที่นี่..."
-        className="w-full h-24 px-3 py-2 border rounded-lg"
+        className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm"
       />
     </div>
   );
