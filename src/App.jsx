@@ -6,12 +6,12 @@ import React from 'react'
 import Header from './components/Header'
 import InputField from './components/InputField'
 import RadioButtonExample from './components/MovieRadio';
+import TextArea from './components/TextArea'
 
 
 function App() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [selectedMovie, setSelectedMovie] = useState('');
   
   return(
     <>
@@ -31,6 +31,7 @@ function App() {
         onChange={(e) => setEmail(e.target.value)}      
     />
     <RadioButtonExample />
+    <TextArea />
     </>
   )
 }
