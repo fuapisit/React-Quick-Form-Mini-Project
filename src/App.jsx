@@ -4,10 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
 import Header from './components/Header'
+import InputField from './components/InputField'
 
 function App() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   return(
+    <>
     <Header />
+    <InputField
+        label="ชื่อ" 
+        type="text" 
+        placeholder="กรุณากรอกชื่อของคุณ" 
+        value={name} 
+        onChange={(e) => setName(e.target.value)}      
+    />
+     <InputField
+        label="อีเมล" 
+        type="email" 
+        placeholder="example@email.com" 
+        value={email} 
+        onChange={(e) => setEmail(e.target.value)}      
+    />
+    </>
   )
 }
 
