@@ -5,10 +5,14 @@ import './App.css'
 import React from 'react'
 import Header from './components/Header'
 import InputField from './components/InputField'
+import RadioButtonExample from './components/MovieRadio';
+
 
 function App() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [selectedMovie, setSelectedMovie] = useState('');
+  
   return(
     <>
     <Header />
@@ -26,6 +30,7 @@ function App() {
         value={email} 
         onChange={(e) => setEmail(e.target.value)}      
     />
+    <RadioButtonExample />
     </>
   )
 }
